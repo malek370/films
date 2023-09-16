@@ -1,0 +1,12 @@
+﻿@model Category
+@{/*<h1>edit category @Model.abb</h1>*/}
+<form class="form-control" method="post">
+	<label asp-for="@Model.Name"></label>
+	<input asp-for="@Model.Name" />
+	<span asp-validation-for="@Model.Name"></span>
+	<label asp-for="@Model.Description"></label>
+	<input asp-for="@Model.Description" />
+	<span asp-validation-for="@Model.Description"></span>
+	<button type="submit" class="btn btn-dark bg-dark">save edit</button>
+	<a class="btn btn-secondary" asp-controller="Category" asp-action="Index">back to Categories</a>
+</form>

@@ -1,0 +1,38 @@
+﻿@model List<Category>
+	
+	<h1>Film Categories</h1>
+	<br /><br />
+@if (TempData["success"] != null)
+{
+	<div class="alert alert-success" role="alert">
+		@TempData["success"]
+	</div>
+}
+@if (TempData["fail"] != null)
+{
+	<div class="alert alert-danger" role="alert">
+		@TempData["fail"]
+	</div>
+}
+<a class="btn btn-dark " asp-controller="Category" asp-action="Creat">creat a category</a>
+<br />
+	<table class="table table-bordered table-striped text-center">
+		<thead>
+			<th>Category</th>
+			<th>Description</th>
+			<th>Abbreviation</th>
+		</thead>
+		<tbody>
+		@foreach(var obj in Model.OrderBy(o=>o.Name))
+		{
+			<tr class="table-hover">
+				<td>@obj.Name</td>
+				<td>@obj.Description</td>
+				<td>@obj.abb</td>
+				<td>
+					<a class=" btn btn-secondary" asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id">Edit</a>
+				</td>
+			</tr>
+		}
+		</tbody>
+	</table>
