@@ -7,6 +7,7 @@
 	<label asp-for="@Model.Description"></label>
 	<input asp-for="@Model.Description" />
 	<span asp-validation-for="@Model.Description"></span>
+	<input asp-for="@Model.abb" hidden />
 	<button type="submit" class="btn btn-dark bg-dark">save edit</button>
 	<a class="btn btn-secondary" asp-controller="Category" asp-action="Index">back to Categories</a>
 </form>

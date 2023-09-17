@@ -66,7 +66,24 @@ namespace WebApplication2.Controllers
 				return RedirectToAction("Index");
 			}
 
+		}
+		public async Task<IActionResult> Delete(int? id)
+		{
+			Category? category = db.categories.Find(id);
+			if (category == null) { return NotFound(); }
+			try
+			{
 
+				db.categories.Remove(category);
+				await db.SaveChangesAsync();
+				TempData["success"] = $"category {category.abb} has been changed";
+				return RedirectToAction("Index");
+			}
+			catch (Exception ex)
+			{
+				TempData["fail"] = ex.Message;
+				return RedirectToAction("Index");
+			}
 		}
 	}
 }
