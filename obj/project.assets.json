@@ -2885,19 +2885,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mbokri\\.nuget\\packages\\": {}
+    "C:\\Users\\malek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mbokri\\source\\repos\\WebApplication2\\WebApplication2.csproj",
+      "projectUniqueName": "C:\\Users\\malek\\Desktop\\train_aspnetcore\\c#\\films\\WebApplication2.csproj",
       "projectName": "WebApplication2",
-      "projectPath": "C:\\Users\\mbokri\\source\\repos\\WebApplication2\\WebApplication2.csproj",
-      "packagesPath": "C:\\Users\\mbokri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mbokri\\source\\repos\\WebApplication2\\obj\\",
+      "projectPath": "C:\\Users\\malek\\Desktop\\train_aspnetcore\\c#\\films\\WebApplication2.csproj",
+      "packagesPath": "C:\\Users\\malek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\malek\\Desktop\\train_aspnetcore\\c#\\films\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mbokri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\malek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

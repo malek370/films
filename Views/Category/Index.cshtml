@@ -21,6 +21,8 @@
 			<th>Category</th>
 			<th>Description</th>
 			<th>Abbreviation</th>
+			<th>Edit</th>
+			<th>Delete</th>
 		</thead>
 		<tbody>
 		@foreach(var obj in Model.OrderBy(o=>o.Name))
@@ -31,6 +33,9 @@
 				<td>@obj.abb</td>
 				<td>
 					<a class=" btn btn-secondary" asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id">Edit</a>
+				</td>
+				<td>
+					<a class=" btn btn-danger" asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id">Edit</a>
 				</td>
 			</tr>
 		}
